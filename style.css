@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Condensed:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=PT+Serif:wght@700&family=Roboto+Condensed:wght@100;700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    background-color: white;
+}
+.section1{
+
+    color: white;
+    height:140vh;
+    width:100%;
+    background-image:url(img/pizzeria-template-hero-bg-img.jpg);
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0,0.7);
+    background-blend-mode: multiply;
+    border-radius:0% 0% 48% 48% / 0% 0% 27% 27%;
+    animation: border_shrink 1s ease-in ;
+}
+@keyframes border_shrink{
+    0%{
+       border-radius: 0px;
+    }
+    100%{
+    border-radius:0% 0% 48% 48% / 0% 0% 27% 27%;
+
+    }
+}
+
+.main-head{
+    height:80px;
+    width:100%;
+    padding:8px 80px;
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 10;
+}
+.social a{
+    margin-right:20px;
+    font-size: 18px;
+    color: white;
+}
+.main-head a{
+    font-family: 'Kaushan Script', cursive;
+    font-style: italic;
+    font-size: 30px;
+}
+.order-btn{
+    width:200px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    border:1.5px solid white;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+
+}
+.order-btn:hover{
+    background-color: white;
+    color: red;
+    transition: all 0.3s linear;
+}
+
+.secondary-head{
+    height:40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.secondary-head li{
+    margin-left:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+}
+.inner-content{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content1{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:600;
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+.content2{
+    width:60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight:400;
+    margin-bottom:50px;
+}
+.btn-content{
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btn-content .btn1{
+    width:200px;
+    height:40px;
+    background-color: red;
+    border:none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.btn-content .btn2{
+    width:170px;
+    height:40px;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    border:1.5px solid white;
+    transition: all 0.3s linear;
+
+}
+.btn-content .btn2:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.3s linear;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+.section2{
+    height:110vh;
+    width:100%;
+    background-color:rgb(231, 231, 225);
+    position: relative;
+}
+.big{
+    width:500px;
+    height:500px;
+    position: absolute;
+    top:-250px;
+    left:32.5%;
+    animation:big_rotate 15s linear infinite;
+
+}
+@keyframes big_rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.p-row{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.item{
+    width:33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.item img{
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.item img:hover{
+ opacity: 0.6;
+}
+.item h2{
+    color: #E4032F;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:30px;
+    margin-bottom: 15px;
+}
+.item p{
+    width:70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: gray;
+}
+.special{
+    transform: translateY(130px);
+}
+/* ---------------------------------------------------------------------------------------- */
+.section3{
+    height:80vh;
+    width:100%;
+    background-image: url(img/bg2.jpg);
+    background-color: #636060;
+    background-blend-mode:multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width:330px;
+}
+.left h2{
+    font-size: 70px;
+    color: white;
+    text-align:left;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+
+}
+.left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.item1{
+    width:300px;
+     height: 330px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icon{
+    height:130px;
+    width:130px;
+    background-color: #E4032F;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    font-size:65px;
+    margin-bottom: 30px;
+}
+.item1 .head1{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px; 
+    margin-bottom: 30px;
+    
+}
+.item1 .nav{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+   letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* ------------------------------------------------------------------------------------ */
+.section4{
+    height:140vh;
+    width:100%;
+    background-color: rgb(247,246,242);
+    border-radius: 0% 0% 48% 48%/0% 0% 20% 20%;
+}
+.section4 .top{
+    height:300px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section4 .top .upper-content{
+    color:rgb(228,3,47);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 700;
+letter-spacing: 2px;
+margin-top:60px;
+}
+.secondary{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.third{
+    width:50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color:gray;
+    margin-bottom:30px;
+}
+.menu-view{
+    width:200px;
+    height:50px;
+    border:2px solid red;
+    border-radius: 5px;
+    font-size:16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:transparent;
+    color: red;
+    font-weight: 500;
+    transition: all 0.3s linear;
+
+}
+.menu-view:hover{
+    background-color: red;
+color: white;
+    transition: all 0.3s linear;
+}
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+.pop img{
+    height:350px;
+    width:350px;
+    transition: all 0.5s linear;
+
+}
+.pop img:hover{
+    transform:translatey(-20px);
+    transition: all 1s ease;
+}
+.pop .name{
+  text-align:center;
+  margin-top: 30px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:25px;
+  color: red;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.pop:nth-child(2n-1){
+    transform: translateY(-90px);
+}
+/* ---------------------------------------------------- */
+.section5{
+    width:100%;
+    height:auto;
+    background-color:rgb(247,246,242);
+    margin-top: 10px;
+}
+.best-deals{
+    height:200px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+
+}
+.best-deals .label{
+    margin-left: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size:60px;
+    
+}
+.viewall{
+    margin-right:60px;
+    height:50px;
+    width:150px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    color: red;
+}
+.meal-label{
+    height: 450px;
+    margin:0px 60px;
+    border-radius: 20px;
+    background-color: #636060;
+    overflow: hidden;
+    position: relative;
+}
+.img-left{
+    position: relative;
+    top:0;
+    left: 0px;
+    height: 100%;
+}
+.img-right{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 450px;
+    width:60%;
+    z-index: 10;
+
+}
+.layer-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deal-div{
+    width:50%;
+    height: 100%;
+}
+.deal-div img{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    height:150px;
+    width:150px
+}
+.content-div{
+    height:250px;
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content-div .daily-deal{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: yellow;
+}
+.content-div .atract{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:70px;
+}
+.content-div .local{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.content-div .rate{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+}
+.label-divs{
+    display: flex;
+    justify-content: space-between;
+    height: 380px;
+    margin: 30px 60px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.label-1{
+   width:48%;
+   height:100%;
+   position: relative;
+   top: 0;
+   left: 0;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.label-1 .shape-left{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.label-1 .shape-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+
+}
+.layer-content1{
+    margin-top: 60px;
+    position: absolute;
+    width: 45%;
+    height:200px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-evenly;
+    text-align: right;
+    padding-right: 20px;
+}
+.layer-content1 .layer-inner-content{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+}
+.layer-content1 .rate{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+}
+.right-label .offer{
+    position: absolute;
+    left: 230px;
+    top: 60px;
+    z-index: 1000;
+}
+.right-label .shape-right{
+    width:50%;
+}
+.location{
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+.location-head1{
+    color: tomato;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.location .near-you{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #2f2e2e;
+}
+.location .location-head{
+    width: 550px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+.address-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+.address-row .address{
+    width: 250px;
+    text-align: center;
+}
+.address-row .address .address-name{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: tomato;
+    margin-bottom: 10px;
+}
+.address-row .address  .address-area{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+
+}
+.address-row .address .telephone-num{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.join-table{
+    width: 100%;
+    height:auto;
+    display: flex;
+    padding: 50px 100px;
+
+}
+.join-table .join-table-left{
+    width: 50%;
+}
+.join-table .join-table-right{
+    width: 50%;
+}
+.join-table .join-table-left .join-table-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:red;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.join-table .join-table-left .join-table-secondary{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.join-table .join-table-right .join-table-right-content{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.join-table .join-table-right button{
+    background-color: transparent;
+    border: 2px solid red;
+    width: 150px;
+    border-radius: 3px;
+    height: 40px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
